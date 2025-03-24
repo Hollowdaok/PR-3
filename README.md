@@ -1,7 +1,7 @@
 # PR-3
 This bot was developed using Python and pyTelegramBotAPI to help users browse products, add them to a cart, and place orders via Telegram.
 
-##Features:
+# Features:
 Category selection via buttons or commands (/cheese, /sausage, /candies).
 
 Display available products with images and prices.
@@ -12,7 +12,7 @@ View and manage the cart (/cart).
 
 Place an order or clear the cart.
 
-##Setup:
+# Setup:
 -Install pyTelegramBotAPI:
 pip install pyTelegramBotAPI
 Set up an SQLite database (products.db) with a products table.

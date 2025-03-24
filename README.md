@@ -1,75 +1,21 @@
 # PR-3
-This is a Telegram bot built using Python and the pyTelegramBotAPI library. The bot allows users to browse products from a SQLite database, add them to a cart, and place orders.
+This bot was developed using Python and pyTelegramBotAPI to help users browse products, add them to a cart, and place orders via Telegram.
 
-Features
+##Features:
+Category selection via buttons or commands (/cheese, /sausage, /candies).
 
-Start with /start or /help command to get category selection.
+Display available products with images and prices.
 
-Inline buttons for product categories: Cheese, Sausage, Candies.
+Add items to the cart with quantity tracking.
 
-Display available products in a selected category.
+View and manage the cart (/cart).
 
-Add products to the cart with quantity tracking.
+Place an order or clear the cart.
 
-View the cart with /cart.
-
-Clear the cart or place an order.
-
-Direct access to categories using /cheese, /sausage, or /candies.
-
-Requirements
-
-Ensure you have the following installed:
-
-Python 3.x
-
-pyTelegramBotAPI library
-
-SQLite3 for database management
-
-Install dependencies:
-
+##Setup:
+-Install pyTelegramBotAPI:
 pip install pyTelegramBotAPI
+Set up an SQLite database (products.db) with a products table.
 
-Setup
-
-Create a Telegram bot using BotFather and get the bot token.
-
-Update the bot = telebot.TeleBot('YOUR_BOT_TOKEN') line in the script with your bot token.
-
-Ensure you have an SQLite database products.db with a table products containing columns: id, name, weight, price, image_url, category.
-
-Running the Bot
-
-Execute the script:
-
+-Run the bot:
 python main.py
-
-The bot will start polling for messages.
-
-Database Structure
-
-The products.db SQLite database should have the following schema:
-
-CREATE TABLE products (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    weight TEXT,
-    price REAL,
-    image_url TEXT,
-    category TEXT NOT NULL
-);
-
-Ensure that each product entry has a corresponding category (cheese, sausage, candies).
-
-Usage
-
-Start the bot: /start
-
-Select a category via buttons.
-
-Browse products and add them to the cart.
-
-View cart: /cart
-
-Clear cart or place an order using inline buttons.

@@ -15,7 +15,8 @@ This bot was developed using Python and pyTelegramBotAPI to help users browse pr
 # Setup:
 -Install pyTelegramBotAPI:
 pip install pyTelegramBotAPI
-Set up an SQLite database (products.db) with a products table.
+
+-Set up an SQLite database (products.db) with a products table.
 
 -Run the bot:
 python main.py

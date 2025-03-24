@@ -2,15 +2,15 @@
 This bot was developed using Python and pyTelegramBotAPI to help users browse products, add them to a cart, and place orders via Telegram.
 
 # Features:
-Category selection via buttons or commands (/cheese, /sausage, /candies).
+-Category selection via buttons or commands (/cheese, /sausage, /candies).
 
-Display available products with images and prices.
+-Display available products with images and prices.
 
-Add items to the cart with quantity tracking.
+-Add items to the cart with quantity tracking.
 
-View and manage the cart (/cart).
+-View and manage the cart (/cart).
 
-Place an order or clear the cart.
+-Place an order or clear the cart.
 
 # Setup:
 -Install pyTelegramBotAPI:
